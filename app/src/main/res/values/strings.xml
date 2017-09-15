@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">ImproveMe</string>
+    <string name="drawer_open">Open the navigation drawer</string>
+    <string name="drawer_close">Close the navigation drawer</string>
+    <string name="title_activity_view_goal">Goal</string>
+    <string name="nav_goals">Goals</string>
+    <string name="nav_settings">Settings</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_goal_title">Title</string>
+    <string name="hint_goal_description">Description</string>
+    <string name="hint_name">Name</string>
+    <string name="header_profile">Profile</string>
+    <string name="header_notifications">Notifications</string>
+    <string name="action_register">Register account</string>
+    <string name="action_login">Login</string>
+    <string name="schedule_title">Scheduled time</string>
+    <string name="schedule_title_notif">Scheduled time and notification</string>
+    <string name="link_to_login">Already have an account? Click here</string>
+    <string name="link_to_register">Want to register a new account? Click here</string>
+    <string name="action_schedule">Schedule for weekly day</string>
+    <string name="day_dialog_title">Choose weekday</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="save">SAVE</string>
+    <string name="every">every</string>
+    <string name="toggle">Toggle view</string>
+    <string name="error_general">An error occurred, please try again</string>
+    <string name="action_goal_added">Goal added successfully.</string>
+    <string name="info_mark_goal_complete">Moved to completed goals</string>
+    <string name="info_goal_deleted">Goal deleted</string>
+    <string name="info_no_goals">You have no goals added! Try adding some.</string>
+
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+</resources>

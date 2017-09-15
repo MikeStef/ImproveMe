@@ -1,0 +1,38 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/active_goals_coordinator_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.micste.improveme.ActiveGoalsFragment">
+
+    <com.micste.improveme.GoalsRecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        android:id="@+id/recycle_view">
+
+    </com.micste.improveme.GoalsRecyclerView>
+
+    <LinearLayout
+        android:id="@+id/active_goals_empty_view"
+        android:orientation="vertical"
+        android:gravity="center_horizontal|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tint="@android:color/darker_gray"
+            android:src="@drawable/ic_sentiment_dissatisfied_black_100dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/info_no_goals" />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

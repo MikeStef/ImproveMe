@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "862211465386",
+    "firebase_url": "https://improveme-7189e.firebaseio.com",
+    "project_id": "improveme-7189e",
+    "storage_bucket": "improveme-7189e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:862211465386:android:0225cb9ee337ebe4",
+        "android_client_info": {
+          "package_name": "com.micste.improveme"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "862211465386-5j3s10cu1i08nibdjd3grft59spiqhhv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiJUS7DATzp48LgsvBp0QUaZ5ZeaNgaA4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

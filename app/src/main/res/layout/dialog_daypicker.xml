@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:id="@+id/radiogroup_1"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_monday"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_radio_btn"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:text="MON"
+            android:tag="Monday"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textAlignment="center"/>
+
+        <RadioButton
+            android:id="@+id/rb_tuesday"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_radio_btn"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:text="TUE"
+            android:tag="Tuesday"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textAlignment="center"/>
+
+        <RadioButton
+            android:id="@+id/rb_wednesday"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_radio_btn"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:text="WED"
+            android:tag="Wednesday"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textAlignment="center"/>
+
+        <RadioButton
+            android:id="@+id/rb_thursday"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_radio_btn"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:text="THU"
+            android:tag="Thursday"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/radiogroup_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radiogroup_1"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_friday"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_radio_btn"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:text="FRI"
+            android:tag="Friday"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textAlignment="center"/>
+
+        <RadioButton
+            android:id="@+id/rb_saturday"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_radio_btn"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:text="SAT"
+            android:tag="Saturday"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textAlignment="center"/>
+
+        <RadioButton
+            android:id="@+id/rb_sunday"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/custom_radio_btn"
+            android:button="@android:color/transparent"
+            android:checked="false"
+            android:text="SUN"
+            android:tag="Sunday"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

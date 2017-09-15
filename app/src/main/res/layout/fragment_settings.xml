@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    tools:context="com.micste.improveme.SettingsFragment">
+
+    <TextView
+        android:id="@+id/header_profile"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header_profile" />
+
+
+    <TextView
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="Edit name"/>
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:textSize="16sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Michael"/>
+
+    <TextView
+        android:id="@+id/change_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:text="Change password"/>
+
+    <TextView
+        android:id="@+id/close_account"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@android:color/black"
+        android:text="Close my account"
+        android:layout_height="wrap_content" />
+
+    <View
+        style="@style/Divider"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/header_notifications"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/header_notifications" />
+
+    <TextView
+        android:id="@+id/notification_sound"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:text="Notification sound"/>
+
+    <TextView
+        android:id="@+id/notification_sound_choosen"
+        android:layout_width="match_parent"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:text="Phone default"/>
+
+</LinearLayout>

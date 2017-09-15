@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    tools:context="com.micste.improveme.AddGoalFragment">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_goal_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:hint="@string/hint_goal_title">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_goal_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:inputType="text" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/til_goal_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_below="@id/til_goal_title"
+        android:hint="@string/hint_goal_description">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/et_goal_description"
+            android:layout_width="match_parent"
+            android:textSize="16sp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine" />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/schedule_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schedule_title"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/til_goal_description"/>
+    
+    <View
+        style="@style/Divider"
+        android:id="@+id/schedule_title_divider"
+        android:layout_below="@id/schedule_title"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tv_scheduled_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="@android:color/black"
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/schedule_title_divider"/>
+
+    <TextView
+        android:id="@+id/tv_scheduled_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="12dp"
+        android:visibility="gone"
+        android:layout_marginStart="4dp"
+        android:layout_below="@id/schedule_title_divider"
+        android:layout_toRightOf="@id/tv_scheduled_day" />
+
+    <Button
+        style="@android:style/TextAppearance.Small"
+        android:id="@+id/btn_schedule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:text="@string/action_schedule"
+        android:textAllCaps="false"
+        android:layout_below="@id/tv_scheduled_day"
+        android:drawableLeft="@drawable/ic_action_add_dark"/>
+
+</RelativeLayout>
