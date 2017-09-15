@@ -36,7 +36,7 @@
                 android:src="@drawable/ic_date"
                 android:layout_below="@id/card_title"
                 android:paddingTop="5dp"
-                android:paddingLeft="4dp"/>
+                android:paddingStart="4dp"/>
 
             <TextView
                 android:id="@+id/card_day"
@@ -44,9 +44,9 @@
                 android:layout_height="wrap_content"
                 android:text="Monday"
                 android:layout_below="@id/card_title"
-                android:layout_toRightOf="@id/card_img_date"
+                android:layout_toEndOf="@id/card_img_date"
                 android:paddingTop="10dp"
-                android:paddingLeft="5dp" />
+                android:paddingStart="5dp" />
 
             <TextView
                 android:id="@+id/card_time"
@@ -54,9 +54,9 @@
                 android:layout_height="wrap_content"
                 android:text="18:05"
                 android:layout_below="@id/card_title"
-                android:layout_toRightOf="@id/card_day"
+                android:layout_toEndOf="@id/card_day"
                 android:paddingTop="10dp"
-                android:paddingLeft="5dp" />
+                android:paddingStart="5dp" />
 
             <TextView
                 android:id="@+id/card_description"

@@ -60,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
         android:textColor="@android:color/black"
         android:visibility="gone"
         android:layout_marginBottom="5dp"
@@ -75,7 +75,7 @@
         android:visibility="gone"
         android:layout_marginStart="4dp"
         android:layout_below="@id/schedule_title_divider"
-        android:layout_toRightOf="@id/tv_scheduled_day" />
+        android:layout_toEndOf="@id/tv_scheduled_day" />
 
     <Button
         style="@android:style/TextAppearance.Small"
@@ -86,6 +86,6 @@
         android:text="@string/action_schedule"
         android:textAllCaps="false"
         android:layout_below="@id/tv_scheduled_day"
-        android:drawableLeft="@drawable/ic_action_add_dark"/>
+        android:drawableStart="@drawable/ic_action_add_dark"/>
 
 </RelativeLayout>

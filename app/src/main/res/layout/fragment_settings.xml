@@ -7,6 +7,7 @@
     android:layout_marginRight="8dp"
     tools:context="com.micste.improveme.SettingsFragment">
 
+    <!-- Not done, WIP -->
     <TextView
         android:id="@+id/header_profile"
         android:layout_marginTop="15dp"

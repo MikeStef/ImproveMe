@@ -6,7 +6,6 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -17,9 +16,9 @@ import java.util.List;
 
 public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAdapter.MyHolder> {
 
-    List<Goal> mList;
-    Context context;
-    int layout_type;
+    private List<Goal> mList;
+    private Context context;
+    private int layout_type;
 
     public CustomRecyclerAdapter(List<Goal> list, Context context, int layout_type) {
         this.mList = list;
@@ -38,9 +37,8 @@ public class CustomRecyclerAdapter extends RecyclerView.Adapter<CustomRecyclerAd
         }
 
         View view = LayoutInflater.from(context).inflate(card, parent, false);
-        MyHolder myHolder = new MyHolder(view);
 
-        return myHolder;
+        return new MyHolder(view);
     }
 
     @Override

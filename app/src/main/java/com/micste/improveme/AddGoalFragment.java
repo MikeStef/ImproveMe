@@ -1,10 +1,6 @@
 package com.micste.improveme;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
 import android.app.TimePickerDialog;
-import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -29,12 +25,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.Calendar;
-import java.util.UUID;
 
 public class AddGoalFragment extends Fragment implements DayDialogFragment.DayDialogListener {
 
     private TextView et_title, tv_day, et_description, tv_time;
-    private Button btn_schedule;
     private FirebaseAuth firebaseAuth;
     private DatabaseReference databaseReference;
     private int hour, minute;
@@ -65,7 +59,7 @@ public class AddGoalFragment extends Fragment implements DayDialogFragment.DayDi
         firebaseAuth = FirebaseAuth.getInstance();
         databaseReference = FirebaseDatabase.getInstance().getReference();
 
-        btn_schedule = (Button) inflatedView.findViewById(R.id.btn_schedule);
+        Button btn_schedule = (Button) inflatedView.findViewById(R.id.btn_schedule);
         btn_schedule.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

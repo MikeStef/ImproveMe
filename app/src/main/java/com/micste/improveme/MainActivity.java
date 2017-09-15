@@ -2,20 +2,19 @@ package com.micste.improveme;
 
 import android.content.Intent;
 import android.content.res.Configuration;
-import android.net.Uri;
+import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
-import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -83,18 +82,15 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (drawerToggle.onOptionsItemSelected(item)) {
-            return true;
-        }
+        return drawerToggle.onOptionsItemSelected(item) || super.onOptionsItemSelected(item);
 
-        return super.onOptionsItemSelected(item);
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
-                    public boolean onNavigationItemSelected(MenuItem item) {
+                    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                         drawerSelectItem(item);
                         return true;
                     }
@@ -103,7 +99,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void drawerSelectItem(MenuItem item) {
         Fragment fragment = null;
-        Class fragmentClass = null;
+        Class fragmentClass;
 
         switch (item.getItemId()) {
             case R.id.nav_goals_fragment:

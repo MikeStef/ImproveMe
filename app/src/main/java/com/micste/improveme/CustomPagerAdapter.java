@@ -11,7 +11,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 public class CustomPagerAdapter extends FragmentPagerAdapter {
 
-    final int pages = 2;
+    private final int pages = 2;
     private String tabTitles[] = new String[] { "Active", "Completed" };
     private Context context;
 

@@ -3,14 +3,11 @@ package com.micste.improveme;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AlertDialog;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
 /**
  * Created by micste on 2017-08-29.

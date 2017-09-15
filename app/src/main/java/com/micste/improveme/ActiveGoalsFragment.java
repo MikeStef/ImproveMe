@@ -1,7 +1,6 @@
 package com.micste.improveme;
 
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;

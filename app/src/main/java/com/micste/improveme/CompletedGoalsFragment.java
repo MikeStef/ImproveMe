@@ -1,7 +1,6 @@
 package com.micste.improveme;
 
 
-import android.app.ProgressDialog;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -139,7 +138,7 @@ public class CompletedGoalsFragment extends Fragment {
         Drawable grid_icon = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_view_grid, null);
         Drawable linear_icon = ResourcesCompat.getDrawable(getResources(), R.drawable.ic_view_linear, null);
 
-        if (isGrid == false) {
+        if (!isGrid) {
             toggleViewMenuItem.setIcon(linear_icon);
             recyclerView.setLayoutManager(glm);
             isGrid = true;
