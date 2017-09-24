@@ -1,6 +1,7 @@
 package com.micste.improveme;
 
 
+import android.content.DialogInterface;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -9,6 +10,7 @@ import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.res.ResourcesCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
@@ -82,6 +84,29 @@ public class CompletedGoalsFragment extends Fragment {
         recyclerView.setAdapter(adapter);
         View emptyView = inflatedView.findViewById(R.id.active_goals_empty_view);
         recyclerView.setEmptyView(emptyView);
+
+        ItemClickSupport.addTo(recyclerView).setOnItemLongClickListener(new ItemClickSupport.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClicked(RecyclerView recyclerView, final int position, View v) {
+                final CharSequence[] items = {"Delete"};
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+                builder.setItems(items, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        switch (i) {
+                            case 0:
+                                deleteGoal(list.get(position));
+                                break;
+                            default:
+                                break;
+                        }
+                    }
+                });
+                builder.show();
+                return true;
+            }
+        });
 
         setupSwipe();
 
